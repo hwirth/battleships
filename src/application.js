@@ -43,10 +43,3 @@ export default class Application {
         );
     }
 }
-
-addEventListener('load', ()=>{
-    new Application({
-        gameBoard: '#gameboard',
-        myListItems: 'ALL ul > li',
-    });
-});
