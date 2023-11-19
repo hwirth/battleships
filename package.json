@@ -2,9 +2,13 @@
   "name": "battleships",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "main.wouldberunifitwasanodeprogram.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "watch": "webpack --watch",
+    "serve": "webpack serve --open"
   },
   "keywords": [],
   "author": "",
@@ -13,5 +17,8 @@
     "eslint": "^8.54.0",
     "weback": "^0.0.1-security",
     "webpack-cli": "^5.1.4"
+  },
+  "dependencies": {
+    "webpack-dev-server": "^4.15.1"
   }
 }
