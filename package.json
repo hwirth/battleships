@@ -5,7 +5,8 @@
   "main": "main.wouldberunifitwasanodeprogram.js",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js --coverage --coverageDirectory='test_coverage'",
+    "test-watch": "node --experimental-vm-modules node_modules/jest/bin/jest.js --watchAll --coverage --coverageDirectory='test_coverage'",
     "build": "webpack",
     "watch": "webpack --watch",
     "serve": "webpack serve --open"
@@ -16,6 +17,8 @@
   "devDependencies": {
     "eslint": "^8.54.0",
     "html-webpack-plugin": "^5.5.3",
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0",
     "weback": "^0.0.1-security",
     "webpack-cli": "^5.1.4"
   },
